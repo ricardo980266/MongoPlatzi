@@ -29,4 +29,3 @@ db.products.insertMany ([
 ], {
     ordered: false
 })
-
