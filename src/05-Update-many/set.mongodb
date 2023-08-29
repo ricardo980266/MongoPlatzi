@@ -1,0 +1,37 @@
+use ("sample_training")
+
+//Agregar un nuevo campo
+/*
+db.zips.updateMany({
+    //Query
+    city: "CLEVELAND"},
+    //Update - operators
+{
+    $set: {
+        MyAttr: "Hola"
+    }
+})
+*/
+/*
+//Renombrar campo 
+db.zips.updateMany({
+    //Query
+    city: "CLEVELAND"},
+    //Update - operators
+{
+    $rename: {
+        MyAttr: "my_data"
+    }
+})
+*/
+
+//Borrar campo 
+db.zips.updateMany({
+    //Query
+    city: "CLEVELAND"},
+    //Update - operators
+{
+    $unset: {
+        my_data: ""
+    }
+})

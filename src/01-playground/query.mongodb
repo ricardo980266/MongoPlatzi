@@ -1,0 +1,4 @@
+//Nombre de la conexion
+use ("sample_training")
+//db.nombre_bd.find()
+db.zips.find()
