@@ -1,0 +1,3 @@
+use ("Plazi_store")
+
+db.products.find()
