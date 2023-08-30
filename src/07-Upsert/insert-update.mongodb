@@ -1,0 +1,31 @@
+use("platzi_store")
+
+//Insertar valor
+/*
+db.iot.insertOne ({
+    sensor: "A001",
+    date: "2022-01-03",
+    readings: [1212]
+})
+*/
+//Agregar un valor
+/*
+db.iot.updateOne({
+    sensor: "A001",
+    date: "2022-01-03",
+  }, {
+    $push: {
+      readings: 2323
+    }
+  })
+  */
+ 
+//Devolver cambios
+  db.iot.updateOne({
+    sensor: "A001",
+    date: "2022-01-03",
+  }, {
+    $pop: {
+      readings: -1
+    }
+  })

@@ -1,0 +1,17 @@
+/*
+//Removiendo un elemento
+db.inventory.updateMany({},{
+    $pull: {
+        tags: "book"
+    }
+})
+*/
+
+//Remover varios elementos 
+db.inventory.updateMany({},{
+    $pull: {
+        tags: {
+            $in: ["appliance", "school"]
+        }
+    }
+})
